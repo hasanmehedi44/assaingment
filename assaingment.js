@@ -10,7 +10,9 @@ console.log(resultMile);
 
 
 
-// Chait table khat calculator
+
+
+// Chair table khat calculator
 
 function woodCalculator (chair, table, khat) {
     var woodForTheChair = chair * 1; // input iteam "chair" must become only number of chair.
@@ -21,6 +23,10 @@ function woodCalculator (chair, table, khat) {
 }
 var resultTotalWood = woodCalculator(2, 2, 1);
 console.log(resultTotalWood + " cubic feet wood needed");
+
+
+
+
 
 
 // Brick calculator
@@ -39,5 +45,64 @@ function brickCalculator (numberOfTala) {
 
 var resultTotalBricks = brickCalculator(25);
 console.log(resultTotalBricks);
+
+
+
+
+
+
+// findint lowest character name of my friendlist
+
+
+var nameFriends = ["EmaWatson","jenifar", "selina","scarlett", "tailorSwift"];
+
+
+function tinyFriend (nameFriends) {
+    var nameChar = [];
+    for ( var i = 0; i < nameFriends.length; i++) {
+        char = nameFriends[i].length;
+        var index = nameChar.indexOf(char);
+        if (index == -1 ) {
+            nameChar.push(char);
+        }
+    }
+
+    // console.log(Math.min(...nameChar));
+    // console.log(nameChar.indexOf(Math.min(...nameChar)));
+
+    return (nameFriends[nameChar.indexOf(Math.min(...nameChar))]);
+
+}
+
+var result = tinyFriend(nameFriends);
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
