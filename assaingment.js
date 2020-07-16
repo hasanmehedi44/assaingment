@@ -23,3 +23,21 @@ var resultTotalWood = woodCalculator(2, 2, 1);
 console.log(resultTotalWood + " cubic feet wood needed");
 
 
+// Brick calculator
+function brickCalculator (numberOfTala) {
+    if ( numberOfTala <= 10 ) {
+        var brikcs = numberOfTala * 15 * 1000;
+    } else if ( numberOfTala > 10 && numberOfTala <= 20 ) {
+        var tala = numberOfTala - 10;
+            brikcs = 10 * 15 * 1000 + ( tala * 12 * 1000);
+    } else if ( numberOfTala > 20) { 
+        var tala = numberOfTala - 20;
+            brikcs = ( 15 * 10 * 1000) + ( 12 * 10 * 1000) + ( tala * 10 * 1000);
+    }
+    return brikcs;
+}
+
+var resultTotalBricks = brickCalculator(25);
+console.log(resultTotalBricks);
+
+
