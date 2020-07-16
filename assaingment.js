@@ -9,3 +9,17 @@ var resultMile = feetToMile(53723);
 console.log(resultMile);
 
 
+
+// Chait table khat calculator
+
+function woodCalculator (chair, table, khat) {
+    var woodForTheChair = chair * 1; // input iteam "chair" must become cubic foot.
+    var woodForTheTable = table * 3;  // input iteam "table" must become cubic foot.
+    var woodForTheKhat = khat * 5;  // input iteam "khat" must become cubic foot.
+    var totalWoodNeeded = woodForTheChair + woodForTheTable + woodForTheKhat;
+    return totalWoodNeeded;
+}
+var resultTotalWood = woodCalculator(2, 2, 1);
+console.log(resultTotalWood + " cubic feet wood needed");
+
+
