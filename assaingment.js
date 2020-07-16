@@ -13,9 +13,9 @@ console.log(resultMile);
 // Chait table khat calculator
 
 function woodCalculator (chair, table, khat) {
-    var woodForTheChair = chair * 1; // input iteam "chair" must become cubic foot.
-    var woodForTheTable = table * 3;  // input iteam "table" must become cubic foot.
-    var woodForTheKhat = khat * 5;  // input iteam "khat" must become cubic foot.
+    var woodForTheChair = chair * 1; // input iteam "chair" must become only number of chair.
+    var woodForTheTable = table * 3;  // input iteam "table" must become only number of table.
+    var woodForTheKhat = khat * 5;  // input iteam "khat" must become only number of khat.
     var totalWoodNeeded = woodForTheChair + woodForTheTable + woodForTheKhat;
     return totalWoodNeeded;
 }
